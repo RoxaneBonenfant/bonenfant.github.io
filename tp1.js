@@ -36,9 +36,9 @@ $(document).ready(function() {
       var firstfunction = ex3.find('.function1') ;
       firstfunction.find('ul').empty() ;
       firstfunction.find('ul').append(
-	    "<li>X : " + orientation.x + "</li>"
-		"<li>Y : " + orientation.y + "</li>"
-		"<li>Z : " + orientation.z + "</li>"
+	"<li>X : " + orientation.x + "</li>",
+	"<li>Y : " + orientation.y + "</li>",
+        "<li>Z : " + orientation.z + "</li>",
         "<li>Alpha : " + orientation.alpha + "</li>",
         "<li>Beta : " + orientation.beta + "</li>",
         "<li>Gamma : " + orientation.gamma + "</li>"
