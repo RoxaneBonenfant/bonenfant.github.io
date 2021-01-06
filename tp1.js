@@ -29,11 +29,16 @@ $(document).ready(function() {
     ) ;
   });
 
+// Exercice3
+  // DeviceOrientation
   if(window.DeviceOrientationEvent) {
     window.addEventListener('deviceorientation', function(orientation) {
       var firstfunction = ex3.find('.function1') ;
       firstfunction.find('ul').empty() ;
       firstfunction.find('ul').append(
+	    "<li>X : " + orientation.x + "</li>"
+		"<li>Y : " + orientation.y + "</li>"
+		"<li>Z : " + orientation.z + "</li>"
         "<li>Alpha : " + orientation.alpha + "</li>",
         "<li>Beta : " + orientation.beta + "</li>",
         "<li>Gamma : " + orientation.gamma + "</li>"
@@ -41,19 +46,19 @@ $(document).ready(function() {
     });
   }
 
+  // DeviceMotion
   if(window.DeviceMotionEvent) {
     window.addEventListener('devicemotion', function(orientation) {
       var secondfunction = ex3.find('.function2') ;
       secondfunction.find('ul').empty() ;
       secondfunction.find('ul').append(
-        "<li>Acceleration X : " + orientation.acceleration.x + "</li>",
-        "<li>Acceleration Y : " + orientation.acceleration.y + "</li>",
-        "<li>Acceleration Z : " + orientation.acceleration.z + "</li>",
-        "<li>Rotation alpha : " + orientation.rotationRate.alpha + "</li>",
-        "<li>Rotation beta : " + orientation.rotationRate.beta + "</li>",
-        "<li>Rotation gamma : " + orientation.rotationRate.gamma + "</li>"
+        "<li>Accélération X : " + orientation.acceleration.x + "</li>",
+        "<li>Accélération Y : " + orientation.acceleration.y + "</li>",
+        "<li>Accélération Z : " + orientation.acceleration.z + "</li>",
+        "<li>Rotation Alpha : " + orientation.rotationRate.alpha + "</li>",
+        "<li>Rotation Beta : " + orientation.rotationRate.beta + "</li>",
+        "<li>Rotation Gamma : " + orientation.rotationRate.gamma + "</li>"
       ) ;
     });
   }
 
-}) ;
