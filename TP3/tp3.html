@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>TP3 Cartographie</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./src/tp3.js"></script>
+  <link rel="stylesheet" href="./css/tp3.css">
+</head>
+<body>
+  <div>
+    <h1>Exercice 1</h1>
+    <section>
+      <h2>Canvas :</h2>
+      <div>
+        <canvas id="canvas" width="500" height="300"></canvas>
+      </div>
+    </section>
+    <section>
+      <h2>SVG :</h2>
+      <div>
+        <svg width="500" height="300">
+          <rect id="ciel" x="0" y="0" width="500" height="200" class="day"/>
+          <rect x="0" y="200" width="500" height="100" style="fill:#14B63D;"/>
+
+          <polygon points="0,200 80,50 150,200" style="fill:#CEA13B;"/>
+          <polygon points="120,200 180,100 250,200" style="fill:#CEA13B;"/>
+          <polygon points="190,200 280,70 350,200" style="fill:#CEA13B;"/>
+          <polygon points="300,200 400,65 500,200" style="fill:#CEA13B;"/>
+
+          <circle id="soleil" cx="350" cy="50" r="30" style="fill:#FFFF00;"/>
+
+          <rect x="25" y="215" width="80" height="75" style="fill:#77BDE7"/>
+          <rect id="porte" x="40" y="245" width="35" height="45"/>
+
+          <polygon points="25,215 65,180 105,215" style="fill:#175E9F;"/>
+        </svg>
+      </div>
+  </div>
+</body>
+</html>
